@@ -1,6 +1,6 @@
-FROM golang:1.6
+FROM golang:latest
 
-RUN wget http://storage.googleapis.com/kubernetes-release/release/v1.2.4/bin/linux/amd64/kubectl -O /usr/bin/kubectl && \
+RUN curl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl -o /usr/bin/kubectl && \
     chmod +x /usr/bin/kubectl
 
 RUN mkdir -p /go/src/app
