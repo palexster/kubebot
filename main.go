@@ -16,6 +16,7 @@ const (
 	notDefinedErrorMessage string = "%s env variable not defined"
 )
 
+//Do we like global variables? NO!
 var (
 	kb *Kubebot
 )

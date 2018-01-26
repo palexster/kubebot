@@ -7,6 +7,7 @@ import (
 	"os/exec"
 )
 
+//TODO: return error
 func execute(name string, arg ...string) string {
 	rescueStdout := os.Stdout
 	r, w, _ := os.Pipe()

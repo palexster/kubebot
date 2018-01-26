@@ -15,5 +15,4 @@ func stringToMap(s string, sep string) map[string]bool {
 	}
 
 	return m
-
 }
