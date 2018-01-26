@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  kubebot: &kubebot
+    build:
+      context: .
+    environment:
+        KUBEBOT_SLACK_TOKEN: ${KUBEBOT_SLACK_TOKEN}
+        KUBEBOT_SLACK_CHANNELS_IDS: ${KUBEBOT_SLACK_CHANNELS_IDS}
+        KUBEBOT_SLACK_ADMINS_NICKNAMES: ${KUBEBOT_SLACK_ADMINS_NICKNAMES}
+        KUBEBOT_SLACK_VALID_COMMANDS: ${KUBEBOT_SLACK_VALID_COMMANDS}
+    volumes:
+      - ~/.kube/config:/root/.kube/config
