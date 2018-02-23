@@ -1,0 +1,4 @@
+authenticationKeyStore: "authentication-keys"
+authenticationKeyName: "jwt-public-key"
+port: "8080"
+replicas: 1
