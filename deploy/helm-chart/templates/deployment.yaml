@@ -31,7 +31,7 @@ spec:
               key: channel
               name: kubebot
         - name: KUBEBOT_SLACK_ADMINS_NICKNAMES
-          value: horvathors phil.quinn frank tobias
+          value: horvathors phil.quinn frank tobias vladimir.indik
         - name: KUBEBOT_SLACK_VALID_COMMANDS
           value: get describe scale clusterinfo version
         image: "{{ .Values.imageTag }}"
