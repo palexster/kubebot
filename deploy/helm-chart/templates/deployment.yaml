@@ -33,7 +33,7 @@ spec:
         - name: KUBEBOT_SLACK_ADMINS_NICKNAMES
           value: horvathors phil.quinn frank tobias vladimir.indik
         - name: KUBEBOT_SLACK_VALID_COMMANDS
-          value: get describe scale clusterinfo version
+          value: get describe logs scale clusterinfo version
         image: "{{ .Values.imageTag }}"
         imagePullPolicy: Always
         name: kubebot
